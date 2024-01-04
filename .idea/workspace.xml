@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="dbe0c447-aefb-4d43-81ec-37c2c1d1ecbb" name="변경" comment="">
+      <change afterPath="$PROJECT_DIR$/../03-spring-boot-mvc-crud-demo-employees/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03-spring-boot-mvc-crud-demo-employees/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03-spring-boot-mvc-crud-demo-employees/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03-spring-boot-mvc-crud-demo-employees/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03-spring-boot-mvc-crud-demo-employees/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03-spring-boot-mvc-crud-demo-employees/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03-spring-boot-mvc-crud-demo-employees/sql-scripts/employee-directory.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03-spring-boot-mvc-crud-demo-employees/src/main/java/com/luv2code/springboot/thymeleafdemo/ThymeleafdemoApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03-spring-boot-mvc-crud-demo-employees/src/main/java/com/luv2code/springboot/thymeleafdemo/controller/EmployeeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03-spring-boot-mvc-crud-demo-employees/src/main/java/com/luv2code/springboot/thymeleafdemo/dao/EmployeeRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03-spring-boot-mvc-crud-demo-employees/src/main/java/com/luv2code/springboot/thymeleafdemo/entity/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03-spring-boot-mvc-crud-demo-employees/src/main/java/com/luv2code/springboot/thymeleafdemo/service/EmployeeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03-spring-boot-mvc-crud-demo-employees/src/main/java/com/luv2code/springboot/thymeleafdemo/service/EmployeeServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03-spring-boot-mvc-crud-demo-employees/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03-spring-boot-mvc-crud-demo-employees/src/main/resources/static/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03-spring-boot-mvc-crud-demo-employees/src/main/resources/templates/employees/employee-form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03-spring-boot-mvc-crud-demo-employees/src/main/resources/templates/employees/list-employees.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03-spring-boot-mvc-crud-demo-employees/src/test/java/com/luv2code/springboot/thymeleafdemo/ThymeleafdemoApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../udemySpring" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 5
+}]]></component>
+  <component name="ProjectId" id="2aT1PO462sYjdmi8oLA2QA1Jsr9" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/baeyeong-ug/Desktop/Spring/Toy",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "모듈",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-17.0.9-corretto-17.0.9-f644763e9732-203781b8" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="애플리케이션 수준" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="디폴트 작업">
+      <changelist id="dbe0c447-aefb-4d43-81ec-37c2c1d1ecbb" name="변경" comment="" />
+      <created>1704327730525</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1704327730525</updated>
+      <workItem from="1704327731734" duration="26000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
