@@ -11,7 +11,6 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @Controller
-@RequestMapping("/todos")
 public class TodoController {
 
     private TodoService todoService;
@@ -21,9 +20,19 @@ public class TodoController {
     }
 
     // add mapping for "/list
+    @GetMapping("/")
+    public String showHome(){
+
+        return "home";
+    }
+
+    @GetMapping("/systems")
+    public String showSystems() {
+        return "systems";
+    }
 
     // todo 홈
-    @GetMapping("/list")
+    @GetMapping("/todos")
     public String listTodos(Model theModel) {
         // get the todos form db
         List<Todo> theTodos = todoService.findAll();
@@ -37,7 +46,7 @@ public class TodoController {
 
 
     // todo 추가
-    @GetMapping("/showFormForAdd")
+    @GetMapping("/todos/showFormForAdd")
     public String showFormForAdd(Model theModel) {
 
         //create model attribute to bind form data
@@ -49,7 +58,7 @@ public class TodoController {
 
 
     // todo 업데이트
-    @GetMapping("/showFormForUpdate")
+    @GetMapping("/todos/showFormForUpdate")
     public String showFormForUpdate(@RequestParam("todoId") int theId, Model theModel) {
 
         //get the employee from the service
@@ -63,19 +72,19 @@ public class TodoController {
     }
 
     // todo 삭제
-    @GetMapping("/delete")
+    @GetMapping("/todos/delete")
     public String delete(@RequestParam("todoId") int theId) {
         todoService.deleteById(theId);
 
-        return "redirect:/todos/list";
+        return "redirect:/todos";
     }
-    @PostMapping("/save")
+    @PostMapping("/todos/save")
     public String saveTodo(@ModelAttribute("todo") Todo theTodo) {
 
         //save the employee
         todoService.save(theTodo);
 
         // use a redirect to prevent duplicate submissions
-        return "redirect:/todos/list";
+        return "redirect:/todos";
     }
 }
