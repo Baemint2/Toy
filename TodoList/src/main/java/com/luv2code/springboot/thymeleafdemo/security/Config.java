@@ -3,9 +3,12 @@ package com.luv2code.springboot.thymeleafdemo.security;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.provisioning.JdbcUserDetailsManager;
 import org.springframework.security.provisioning.UserDetailsManager;
 import org.springframework.security.web.SecurityFilterChain;
+import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 
 import javax.sql.DataSource;
 
@@ -13,25 +16,10 @@ import javax.sql.DataSource;
 public class Config {
 
     @Bean
-    public UserDetailsManager userDetailsManager(DataSource dataSource) {
-        JdbcUserDetailsManager theUserDetailsManager = new JdbcUserDetailsManager(dataSource);
-        theUserDetailsManager.setUsersByUsernameQuery(
-                "select user_id, pw, active from members where user_id=?");
-
-        theUserDetailsManager.setAuthoritiesByUsernameQuery(
-                "select user_id, role from roles where user_id=?");
-
-        return theUserDetailsManager;
-    }
-
-    @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
         http.authorizeHttpRequests(authz ->
                 authz
-                        .requestMatchers("/").hasRole("USER")
-                        .requestMatchers("/system/**").hasRole("ADMIN")
-                        .anyRequest().authenticated()
-
+                        .requestMatchers(new AntPathRequestMatcher("/**")).permitAll()
         ).formLogin(form ->
                 form
                         .loginPage("/showMyLoginPage")
@@ -42,5 +30,10 @@ public class Config {
                 authz.accessDeniedPage("/access-denied"));
 
         return http.build();
+    }
+        @Bean
+        PasswordEncoder passwordEncoder() {
+            return new BCryptPasswordEncoder();
+
     }
 }
